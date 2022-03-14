@@ -1112,6 +1112,17 @@ config I2C_VERSATILE
 	  This driver can also be built as a module.  If so, the module
 	  will be called i2c-versatile.
 
+config I2C_KINGKONG
+	tristate "GLADCI I2C bus support"
+	depends on ARCH_MPS2 || ARCH_VERSATILE || ARCH_REALVIEW || ARCH_VEXPRESS || COMPILE_TEST
+	select I2C_ALGOBIT
+	help
+	  Say yes if you want to support the I2C serial bus on GLADCI
+	  range of platforms.
+
+	  This driver can also be built as a module.  If so, the module
+	  will be called i2c-kingkong.
+
 config I2C_WMT
 	tristate "Wondermedia WM8xxx SoC I2C bus support"
 	depends on ARCH_VT8500 || COMPILE_TEST

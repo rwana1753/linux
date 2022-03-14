@@ -180,7 +180,7 @@
 	i2c0: i2c@10002000 {
 		#address-cells = <1>;
 		#size-cells = <0>;
-		compatible = "arm,versatile-i2c";
+		compatible = "kong,kingkong-i2c";
 		reg = <0x10002000 0x1000>;
 
 		rtc@68 {
